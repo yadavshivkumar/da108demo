@@ -1,17 +1,13 @@
-marks = []
+marks1 = int(input("Enter marks 1 : "))
+marks2 = int(input("Enter marks 2 : "))
+marks3 = int(input("Enter marks 3 : "))
 
-f1 = int(input("Enter  marks here: "))
-marks.append(f1)   
-f2 = int(input("Enter marks here: "))
-marks.append(f2)
-f3 = int(input("Enter  marks here: "))
-marks.append(f3)       
-f4 = int(input("Enter  marks here: "))
-marks.append(f4)
-f5 = int(input("fifth marks here: "))
-marks.append(f5)   
-f6 = int(input("Enter  marks here: "))
-marks.append(f6)
+# check fpr total percentage
+total_percentage = 100 * (marks1 + marks2 + marks3) / 300
 
-marks.sort()
-print(marks)
+if total_percentage >= 40 and marks1 >= 33 and marks2 >= 33 and marks3 >= 33:
+    print("You are pass with total percentage:", total_percentage)
+
+else:
+    print("You are fail with total percentage:", total_percentage)
+    print("try again next year.")
