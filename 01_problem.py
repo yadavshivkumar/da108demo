@@ -1,26 +1,21 @@
-friuts = []
+a1 = int(input("Enter number 1 : "))
+a2 = int(input("Enter number 2 : "))
+a3 = int(input("Enter number 3 : "))
+a4 = int(input("Enter number 4 : "))
 
-f1 = input("Enter first fruit: ")
-friuts.append(f1)   
-f2 = input("Enter second fruit: ")
-friuts.append(f2) 
-f3 = input("Enter third fruit: ")
-friuts.append(f3)       
-f4 = input("Enter fourth fruit: ")
-friuts.append(f4)
-f5 = input("Enter fifth fruit: ")
-friuts.append(f5)   
-f6 = input("Enter sixth fruit: ")
-friuts.append(f6)
-f7 = input("Enter seventh fruit: ")
-friuts.append(f7)
+if a1 > a2 and a1 > a3 and a1 > a4:
+    print("Number 1 is the largest:, a1)")
 
-# append means to add an element to the list
+elif a2 > a1 and a2 > a3 and a2 > a4:
+    print("Number 2 is the largest:, a2)")
 
-print(friuts)
+elif a3 > a1 and a3 > a2 and a3 > a4:
+    print("Number 3 is the largest:, a3)")
 
-fruits = []
-for i in range(1, 8):
-    fruit = input(f"Enter fruit {i}: ")
-    fruits.append(fruit)
-print(fruits)
+elif a4 > a1 and a4 > a2 and a4 > a3:
+    print("Number 4 is the largest:, a4)")
+
+else:
+    print("There is no largest number, all numbers are equal or there is a tie.")
+
+
